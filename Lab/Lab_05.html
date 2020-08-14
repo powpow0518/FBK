@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>課表</title>
     <style>
-        
         td {
             text-align: center;
-            background-color: #D0D0D0 ;
+            background-color: #D0D0D0;
             padding: 5px 0px;
         }
 
@@ -31,7 +30,6 @@
             text-align: center;
             background-color: rgb(24, 209, 0);
         } */
-
         table {
             border-radius: 30px;
             padding: 2px;
@@ -51,16 +49,33 @@
             text-align: center;
             font-family: 'Noto Serif TC', serif;
             font-weight: 650;
+            border-bottom-right-radius: 30px;
         }
-        table{
+
+        table {
             border: 1px solid black;
             vertical-align: middle;
         }
-        td:hover{
+
+        td:hover {
             background-color: plum;
         }
-        .mid:hover,.end:hover{
+
+        .mid:hover,
+        .end:hover {
             background-color: yellow;
+        }
+
+        .top_1 {
+            border-top-left-radius: 30px;
+        }
+
+        .top_r {
+            border-top-right-radius: 30px;
+        }
+
+        .d_l {
+            border-bottom-left-radius: 30px;
         }
     </style>
 </head>
@@ -70,7 +85,7 @@
         <table>
             <caption>課表</caption>
             <tr>
-                <th>
+                <th class="top_l">
 
                 </th>
                 <th>
@@ -85,7 +100,7 @@
                 <th>
                     星期四
                 </th>
-                <th>
+                <th class="top_r">
                     星期五
                 </th>
             </tr>
@@ -220,7 +235,7 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="d_l">
                     16:10
                 </td>
                 <td colspan="5" class="end">
