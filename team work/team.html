@@ -6,38 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>team</title>
     <style>
-        body{
+        body {
             background-color: gray;
             height: 100%;
         }
-        .warpper{
+
+        .warpper {
             min-height: 100%;
-            position: relative;
+
+            display: grid;
+            grid-template-columns: 30px 1fr 1fr 1fr 1fr 60px ;
+            grid-template-rows: 70px 1fr 40px;
         }
+
         .header {
-            display: flex;
-            padding: 1px;
-            flex-direction: row;
-            justify-content: space-between;
+            padding:1px;
             height: 70px;
             box-sizing: border-box;
+
             
-            
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
         }
-        .title{
+
+        .title {
             width: 250px;
             font-size: 60px;
             font-style: italic;
-            color:#49c8f0 ;
+            color: #49c8f0;
         }
-        .main{
+.menu{
+    display: grid;
+    grid-row:4/6 ;
+    grid-column: 1;
+    background-color: blue;
+
+}
+        .main {
             padding-top: 40px;
             padding-bottom: 40px;
             background-color: honeydew;
+
+
         }
 
         .herder>div {
@@ -45,17 +53,16 @@
             width: 150px;
             height: 50px;
             margin: 5px;
-            }
-        .footer {
-            height: 40px;
-            box-sizing: border-box;
-            position: absolute;
-            margin-top: -100px;
-            bottom: 0;
-            width: 100%;
-            background-color: green;
         }
-        
+
+        .footer {
+            padding:1px;
+            box-sizing: border-box;
+            background-color: green;
+
+            display: grid;
+
+        }
     </style>
 </head>
 
@@ -85,7 +92,7 @@
         </div>
         <div class="footer">
             121
-        </div>        
+        </div>
     </div>
 </body>
 
