@@ -23,9 +23,14 @@
         }
 
         .header {
+            margin: 0;
             padding: 5px;
             height: 70px;
             box-sizing: border-box;
+            grid-column: 1/-1;
+            grid-row: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
 
         }
 
@@ -33,16 +38,26 @@
             font-size: 60px;
             font-style: italic;
             color: #49c8f0;
+            grid-row: 1/2;
+            grid-column: 1/2;
         }
 
-        .menu{
-            grid-column: 5/-1;
-            grid-row:1/2 ;
+        .news {
+            grid-column: 2/3;
+            grid-row: 1/2;
             background-color: blue;
-
+            text-align: center;
+            vertical-align: center;
+        }
+        .menu{
+            text-align: center;
+            vertical-align: center;
         }
 
-        .main {grid-row: 2/-2;}
+        .main {
+            grid-row: 2/-2;
+            grid-column: 1/-1;
+        }
 
         .herder>div {
             background-color: aquamarine;
@@ -66,14 +81,16 @@
     <div class="warpper">
         <header class="header">
             <div class="title">
-                hololive
+                標題
+            </div>
+            <div class="news">
+                <div>
+                    最新消息
+                </div>
             </div>
             <div class="menu">
                 <div>
-                    333
-                </div>
-                <div>
-                    334
+                    會員表
                 </div>
             </div>
         </header>
