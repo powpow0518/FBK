@@ -24,15 +24,25 @@
         body {
             background-image: url("../KSh8vm4BMH2_cNUg3H6B.jpg");
             background-repeat: no-repeat;
-            background-position: right bottom;
+            background-position: right center;
+            background-color: cornsilk;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 20% 60% 15% 1fr;
+
+            min-height: 100vh;
+            margin: 0;
         }
 
         table {
-            display: grid;
-            place-items: start;
+
             border-radius: 20px;
             padding: 2px;
             vertical-align: middle;
+            font-size: small;
+            display: grid;
+            grid-area: 2/1/3/4;
         }
 
         .mid {
@@ -95,187 +105,196 @@
             font-size: 24px;
             line-height: 36px;
             padding-left: 30px;
-            margin: 10px 70% 10px 30%;
+
+        }
+
+        .tri {
+            display: grid;
+            grid-area: 3/3/4/4;
         }
 
         .DD {
             list-style-position: inside;
+            display: grid;
+            grid-area: 1/1/2/2;
         }
     </style>
 </head>
 
 <body>
     <div>
-        <ul class="DD">我就DD怎麼了
-            <li>白上吹雪</li>
-            <li>百鬼綾目</li>
-            <li>寶鍾瑪琳</li>
+        <ul class="DD">DD 歡迎您
+            <li>學生資料表</li>
+            <li>成績查詢</li>
+            <li>課表</li>
+            <li>請假系統</li>
+            <li>考試查詢</li>
         </ul>
     </div>
-    <small>
-        <table>
-            <caption>課表</caption>
-            <tr>
-                <th class="top_l">
 
-                </th>
-                <th>
-                    星期一
-                </th>
-                <th>
-                    星期二
-                </th>
-                <th>
-                    星期三
-                </th>
-                <th>
-                    星期四
-                </th>
-                <th class="top_r">
-                    星期五
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    09:10
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
-                    Web 基礎程式設計
-                </td>
-                <td>
-                    軟體工程專題
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
-                    Web 基礎程式設計
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    10:10
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
-                    Web 基礎程式設計
-                </td>
-                <td>
-                    軟體工程專題
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
-                    Web 基礎程式設計
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    11:10
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
+    <table>
+        <caption></caption>
+        <tr>
+            <th class="top_l">
 
-                    Web 基礎程式設計
+            </th>
+            <th>
+                星期一
+            </th>
+            <th>
+                星期二
+            </th>
+            <th>
+                星期三
+            </th>
+            <th>
+                星期四
+            </th>
+            <th class="top_r">
+                星期五
+            </th>
+        </tr>
+        <tr>
+            <td>
+                09:10
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
+                Web 基礎程式設計
+            </td>
+            <td>
+                軟體工程專題
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
+                Web 基礎程式設計
+            </td>
+        </tr>
+        <tr>
+            <td>
+                10:10
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
+                Web 基礎程式設計
+            </td>
+            <td>
+                軟體工程專題
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
+                Web 基礎程式設計
+            </td>
+        </tr>
+        <tr>
+            <td>
+                11:10
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
 
-                </td>
-                <td>
-                    軟體工程專題
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
-                    Web 基礎程式設計
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    12:10
-                </td>
-                <td colspan="5" class="mid">
-                    午休
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    13:10
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
-                    Web 基礎程式設計
-                </td>
-                <td>
-                    資訊概論
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
-                    Web 基礎程式設計
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    14:10
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
-                    Web 基礎程式設計
-                </td>
-                <td>
-                    資訊概論
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
-                    Web 基礎程式設計
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    15:10
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
-                    Web 基礎程式設計
-                </td>
-                <td>
-                    資訊概論
-                </td>
-                <td>
-                    python 基礎程式設計
-                </td>
-                <td>
-                    Web 基礎程式設計
-                </td>
-            </tr>
-            <tr>
-                <td class="d_l">
-                    16:10
-                </td>
-                <td colspan="5" class="end">
-                    請滾，謝謝配合
-                </td>
-            </tr>
-        </table>
-    </small>
-    <div>
+                Web 基礎程式設計
+
+            </td>
+            <td>
+                軟體工程專題
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
+                Web 基礎程式設計
+            </td>
+        </tr>
+        <tr>
+            <td>
+                12:10
+            </td>
+            <td colspan="5" class="mid">
+                午休
+            </td>
+        </tr>
+        <tr>
+            <td>
+                13:10
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
+                Web 基礎程式設計
+            </td>
+            <td>
+                資訊概論
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
+                Web 基礎程式設計
+            </td>
+        </tr>
+        <tr>
+            <td>
+                14:10
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
+                Web 基礎程式設計
+            </td>
+            <td>
+                資訊概論
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
+                Web 基礎程式設計
+            </td>
+        </tr>
+        <tr>
+            <td>
+                15:10
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
+                Web 基礎程式設計
+            </td>
+            <td>
+                資訊概論
+            </td>
+            <td>
+                python 基礎程式設計
+            </td>
+            <td>
+                Web 基礎程式設計
+            </td>
+        </tr>
+        <tr>
+            <td class="d_l">
+                16:10
+            </td>
+            <td colspan="5" class="end">
+                請滾，謝謝配合
+            </td>
+        </tr>
+    </table>
+
+    <div class="tri">
         <p class="JianTou3">
             我老婆<br>
             百鬼綾目

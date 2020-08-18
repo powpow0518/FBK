@@ -7,46 +7,42 @@
     <title>team</title>
     <style>
         body {
-            background-color: gray;
-            height: 100%;
+            background-color: #20B2AA;
+            height: 100vh;
+            margin: 0;
+            width: 100vw;
         }
 
         .warpper {
-            min-height: 100%;
-
             display: grid;
-            grid-template-columns: 30px 1fr 1fr 1fr 1fr 60px ;
-            grid-template-rows: 70px 1fr 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            min-height: 100%;
+            min-width: 100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
         }
 
         .header {
-            padding:1px;
+            padding: 5px;
             height: 70px;
             box-sizing: border-box;
 
-            
         }
 
         .title {
-            width: 250px;
             font-size: 60px;
             font-style: italic;
             color: #49c8f0;
         }
-.menu{
-    display: grid;
-    grid-row:4/6 ;
-    grid-column: 1;
-    background-color: blue;
 
-}
-        .main {
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: honeydew;
-
+        .menu{
+            grid-column: 5/-1;
+            grid-row:1/2 ;
+            background-color: blue;
 
         }
+
+        .main {grid-row: 2/-2;}
 
         .herder>div {
             background-color: aquamarine;
@@ -56,11 +52,11 @@
         }
 
         .footer {
-            padding:1px;
+            padding: 5px;
             box-sizing: border-box;
             background-color: green;
-
-            display: grid;
+            grid-row: -1/-2;
+            grid-column: 1/-1;
 
         }
     </style>
@@ -68,7 +64,7 @@
 
 <body>
     <div class="warpper">
-        <div class="header">
+        <header class="header">
             <div class="title">
                 hololive
             </div>
@@ -80,8 +76,8 @@
                     334
                 </div>
             </div>
-        </div>
-        <div class="main">
+        </header>
+        <main class="main">
             225
             <div class="sidebar">
                 123
@@ -89,10 +85,10 @@
             <div class="content">
                 124
             </div>
-        </div>
-        <div class="footer">
+        </main>
+        <footer class="footer">
             121
-        </div>
+        </footer>
     </div>
 </body>
 
