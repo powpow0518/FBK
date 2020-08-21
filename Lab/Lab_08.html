@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課表</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+    <style>
+        td {
+            text-align: center;
+            background-color: #D0D0D0;
+            padding: 5px 0px;
+        }
+
+        th {
+            padding: 8px 0px;
+        }
+
+        th,
+        td:first-child {
+            background-color: aqua;
+        }
+
+        body {
+
+            background-color: cornsilk;
+            height: 100%;
+
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        table {
+
+            border-radius: 20px;
+            padding: 2px;
+            vertical-align: middle;
+            font-size: small;
+            color: #000;
+            text-align: center;
+        }
+
+        .mid {
+            background-color: white;
+            font-size: 27px;
+            text-align: center;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        .end {
+            background-color: white;
+            font-size: 27px;
+            text-align: center;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 650;
+            border-bottom-right-radius: 20px;
+        }
+
+
+        td:hover {
+            background-color: plum;
+        }
+
+        .mid:hover,
+        .end:hover {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        .top_l {
+            border-top-left-radius: 20px;
+        }
+
+        .top_r {
+            border-top-right-radius: 20px;
+        }
+
+        .d_l {
+            border-bottom-left-radius: 20px;
+        }
+
+        .tablediv {
+            width: 60vw;
+        }
+
+        .dd {
+            width: 30vw;
+        }
+    </style>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+    integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+    crossorigin="anonymous"></script>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <p>
+
+                    <img src="../KSh8vm4BMH2_cNUg3H6B.jpg" alt="頭像" width="400px"><br>
+
+                </p>
+            </div>
+            <div class="col-sm">
+                <div class="dd">
+                    <ul class="list-group" ;class="dd">
+                        <li class="list-group-item active" style="color: white;font-size: 40px;">
+                            <i class="fas fa-anchor"></i>
+                            DD 歡迎您
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-angle-double-down fa-fw"></i>
+                            課表查詢
+                            <i class="fas fa-cog fa-spin"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-angle-double-right fa-fw"></i>
+                            成績查詢
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-angle-double-right fa-fw"></i>
+                            請假系統
+                            <i class="fas fa-circle-notch fa-spin"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-angle-double-right fa-fw"></i>
+                            考試查詢
+                            <i class="fas fa-sync fa-spin"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-angle-double-right fa-fw"></i>
+                            學生資料表
+                            <i class="fas fa-spinner fa-pulse"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="d-flex justify-content-center">
+        <div class="tablediv">
+            <table class="table ">
+                <thead>
+                    <tr>
+                        <th scope="col" class="top_l"></th>
+                        <th scope="col">星期一</th>
+                        <th scope="col">星期二</th>
+                        <th scope="col">星期三</th>
+                        <th scope="col">星期四</th>
+                        <th scope="col" class="top_r">星期五</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">09:10</th>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                        <td>軟體工程專題</td>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:10</th>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                        <td>軟體工程專題</td>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:10</th>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                        <td>軟體工程專題</td>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12:10</th>
+                        <td colspan="5" class="mid">午休</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13:10</th>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                        <td>軟體工程專題</td>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14:10</th>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                        <td>軟體工程專題</td>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15:10</th>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                        <td>軟體工程專題</td>
+                        <td>python 基礎程式設計</td>
+                        <td>Web 基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="d_l">16:10</th>
+                        <td colspan="5" class="end">請滾，謝謝配合</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
