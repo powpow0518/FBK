@@ -32,6 +32,8 @@
     }
 
     .box {
+      /* width: 21rem;
+      height: 21rem; */
       width: 21vw;
       height: 21vw;
       background: rgb(205, 205, 205);
@@ -43,6 +45,8 @@
     }
 
     .clock {
+      /* width: 20rem;
+      height: 20rem; */
       width: 20vw;
       height: 20vw;
       background: #fff url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg) no-repeat center;
@@ -50,7 +54,7 @@
       border-radius: 50%;
       position: relative;
       padding-bottom: 31%;
-      margin-top: 2%;
+      margin-top: 7px;
     }
 
     .clock.simple:after {
@@ -133,6 +137,26 @@
       animation: rotate 60s infinite steps(60);
       transition: transform 0.2s cubic-bezier(.4, 2.08, .55, .44);
     }
+
+    .dropdown-menu {
+    text-align: center;
+    width: 95%;
+    padding-right: 18px;
+    }
+
+    .btn
+    {
+      letter-spacing: 3px;
+
+    }
+    .dropdown-toggle::after
+    {
+      position: absolute;
+      top: 21px;
+      left: 60%;
+    }
+
+
   </style>
 </head>
 
@@ -163,7 +187,7 @@
             <i class="fas fa-bars mr-1"></i>
             分類
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding-left: 8px;">
             <a class="dropdown-item" href="#">3C</a>
             <a class="dropdown-item" href="#">通訊</a>
             <a class="dropdown-item" href="#">數位</a>
@@ -239,7 +263,7 @@
           </div>
           <div>
             <button class="btn btn-secondary btn-block dropdown-toggle alert alert-primary" type="button"
-              id="dropdownMenuButton-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
+              id="dropdownMenuButton-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert" >
               3C
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-1">
