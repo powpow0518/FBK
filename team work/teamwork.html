@@ -32,8 +32,8 @@
     }
 
     .box {
-      width: 21vw;
-      height: 21vw;
+      width: 21rem;
+      height: 21rem;
       background: rgb(205, 205, 205);
       border-radius: 1rem;
       margin: 5% auto;
@@ -43,8 +43,8 @@
     }
 
     .clock {
-      width: 20vw;
-      height: 20vw;
+      width: 20rem;
+      height: 20rem;
       background: #fff url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg) no-repeat center;
       background-size: 88%;
       border-radius: 50%;
@@ -133,26 +133,6 @@
       animation: rotate 60s infinite steps(60);
       transition: transform 0.2s cubic-bezier(.4, 2.08, .55, .44);
     }
-
-    .dropdown-menu {
-    text-align: center;
-    width: 95%;
-    padding-right: 18px;
-    }
-
-    .btn
-    {
-      letter-spacing: 3px;
-
-    }
-    .dropdown-toggle::after
-    {
-      position: absolute;
-      top: 21px;
-      left: 60%;
-    }
-
-
   </style>
 </head>
 
@@ -183,7 +163,7 @@
             <i class="fas fa-bars mr-1"></i>
             分類
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">3C</a>
             <a class="dropdown-item" href="#">通訊</a>
             <a class="dropdown-item" href="#">數位</a>
@@ -259,7 +239,7 @@
           </div>
           <div>
             <button class="btn btn-secondary btn-block dropdown-toggle alert alert-primary" type="button"
-              id="dropdownMenuButton-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert" >
+              id="dropdownMenuButton-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
               3C
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-1">
@@ -533,7 +513,9 @@
                   <span aria-hidden="true">&laquo;</span>
                 </a>
               </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+              </li>
               <li class="page-item"><a class="page-link" href="#">2</a></li>
               <li class="page-item"><a class="page-link" href="#">3</a></li>
               <li class="page-item">
@@ -578,7 +560,7 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-outline-primary">Submit</button>
           </form>
         </div>
       </div>
