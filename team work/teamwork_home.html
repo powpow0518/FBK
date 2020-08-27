@@ -150,6 +150,22 @@
       top: 21px;
       left: 60%;
     }
+
+    .foot {
+      background-color:black;
+      animation: foot 4s infinite;
+    }
+
+    @keyframes foot {
+      31%, 33%, 35%, 100% {
+        color:white;
+        text-shadow: -1px 0px 2px white, 0 0 1px white;
+      }
+      0%, 30%, 32%, 34% {
+        color: #e91e63;
+        text-shadow: -1px 0px 2px #e91e63, 0 0 1px #e91e63;
+      }
+    }
   </style>
 </head>
 
@@ -605,7 +621,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fuild main-footer text-center" style="background-color:black;color: white;">
+  <div class="container-fuild main-footer text-center foot">
     &copy;copyright by FBK
   </div>
 
