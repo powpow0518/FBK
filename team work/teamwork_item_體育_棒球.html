@@ -34,7 +34,7 @@
     .text_shadow {
       color: rgb(0, 89, 0);
       font-size: 50px;
-      text-shadow: rgb(255, 252, 168) 2px 2px 0px, rgb(156, 156, 156) 4px 4px 0px;
+      text-shadow: 0 0 3px #FF0000;
     }
 
     .box {
@@ -116,29 +116,7 @@
       z-index: 8;
     }
 
-    /* 動畫 */
-    @keyframes rotate {
-      100% {
-        transform: rotateZ(360deg);
-      }
-    }
-
-    /* 時針每小時旋轉一次 */
-    .hours-container {
-      animation: rotate 43200s infinite steps(60);
-    }
-
-    /* 分針每分鐘旋轉一次 */
-    .minutes-container {
-      animation: rotate 3600s infinite steps(60);
-      transition: transform 0.3s cubic-bezier(.4, 2.08, .55, .44);
-    }
-
-    /* 秒針每秒旋轉一次 */
-    .seconds-container {
-      animation: rotate 60s infinite steps(60);
-      transition: transform 0.2s cubic-bezier(.4, 2.08, .55, .44);
-    }
+    
 
     .dropdown-menu {
       text-align: center;
@@ -156,6 +134,14 @@
       top: 21px;
       left: 60%;
     }
+
+    .side_pic
+    {
+      display: flex;
+      align-items: center;
+    }
+
+    
   </style>
 </head>
 
@@ -362,11 +348,11 @@
           </div>
         </div>
         <!-- 時鐘 -->
-        <div class="container-fuild col-12 col-md-3" style="margin-top: 15px;">
-          <div class="vs_box_side"  style="width: 300px;">
+        <div class="container-fuild col-12 col-md-3 " style="margin-top: 15px; max-width: 100%;">
+          <div class="vs_box_side" >
             <h3>今日賽程</h3>
             <div class="vs_box_border justify-content-center">
-              <div class="vs_team_side"><img src="http://cpbl-elta.cdn.hinet.net/pad/images/team/AJL011_logo_01.png"
+              <div class=><img src="http://cpbl-elta.cdn.hinet.net/pad/images/team/AJL011_logo_01.png"
                   width="90px" height="90px" /></div>
               <p>
               <div class="vs_info_side">
