@@ -152,16 +152,24 @@
     }
 
     .foot {
-      background-color:black;
+      background-color: black;
       animation: foot 4s infinite;
     }
 
     @keyframes foot {
-      31%, 33%, 35%, 100% {
-        color:white;
+
+      31%,
+      33%,
+      35%,
+      100% {
+        color: white;
         text-shadow: -1px 0px 2px white, 0 0 1px white;
       }
-      0%, 30%, 32%, 34% {
+
+      0%,
+      30%,
+      32%,
+      34% {
         color: #e91e63;
         text-shadow: -1px 0px 2px #e91e63, 0 0 1px #e91e63;
       }
@@ -708,25 +716,31 @@
     }
   </script>
   <script language="javascript">
+    window.onload = function () {
+      getTime;
+    }
 
-    if (second == undefined ) {
-      var second = Number(null);
+    function getTime() {
+      if (second == undefined) {
+        var second = Number(null);
+      }
+      else {
+        var second = localStorage.getItem("second");
+      }
+      if (minute == undefined) {
+        var minute = Number(null);
+      }
+      else {
+        var minute = localStorage.getItem("minute");
+      }
+      if (hour == undefined) {
+        var hour = Number(null);
+      }
+      else {
+        var hour = localStorage.getItem("hour");
+      }
     }
-    else {
-      var second = localStorage.getItem("second");
-    }
-    if (minute == undefined ) {
-      var minute = Number(null);
-    }
-    else {
-      var minute = localStorage.getItem("minute");
-    }
-    if (hour == undefined ) {
-      var hour = Number(null);
-    }
-    else {
-      var hour = localStorage.getItem("hour");
-    }
+
     window.setTimeout("saveTime();interval();waring()", 1000);
     function interval() {
       second++;
@@ -755,7 +769,7 @@
 
 
   </script>
-  
+
 
 
 
