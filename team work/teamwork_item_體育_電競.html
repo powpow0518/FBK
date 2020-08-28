@@ -53,6 +53,21 @@
       top: 21px;
       left: 60%;
     }
+    .foot {
+      background-color:black;
+      animation: foot 4s infinite;
+    }
+
+    @keyframes foot {
+      31%, 33%, 35%, 100% {
+        color:white;
+        text-shadow: -1px 0px 2px white, 0 0 1px white;
+      }
+      0%, 30%, 32%, 34% {
+        color: #e91e63;
+        text-shadow: -1px 0px 2px #e91e63, 0 0 1px #e91e63;
+      }
+    }
   </style>
 </head>
 
@@ -262,13 +277,13 @@
         <div class="container-fuild col-12 col-md-3" style="margin-top: 15px;">
           <div>
             <a href="https://game.upmedia.mg/2020TLC/index.php" target="blank"><img
-                src="https://www.upmedia.mg/upload/article/20200601190801916737.png" height="200px" width="320px">
+                src="https://www.upmedia.mg/upload/article/20200601190801916737.png" height="200px" width="300px">
             </a>
           </div>
           <div  style="margin-top: 10px;">
             <a href="https://www.carry.live/2020AEC/" target="blank"><img
                 src="https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/107512476_135820048155886_4789899066255033232_n.jpg?_nc_cat=105&_nc_sid=e3f864&_nc_ohc=SehCrTXlJUcAX8mC1lu&_nc_ht=scontent.frmq2-1.fna&oh=debc95a0aee85016d34b2f9fd4337cf2&oe=5F6C08E8"
-                height="200px" width="320px">
+                height="200px" width="300px">
             </a>
           </div>
         </div>
@@ -507,7 +522,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fuild main-footer text-center" style="background-color:black;color: white;">
+  <div class="container-fuild main-footer text-center foot">
     &copy;copyright by FBK
   </div>
 
