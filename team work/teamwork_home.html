@@ -716,30 +716,28 @@
     }
   </script>
   <script language="javascript">
-    window.onload = function () {
-      getTime;
+
+
+
+    if (second == undefined) {
+      var second = Number(null);
+    }
+    else {
+      var second = localStorage.getItem("second");
+    }
+    if (minute == undefined) {
+      var minute = Number(null);
+    }
+    else {
+      var minute = localStorage.getItem("minute");
+    }
+    if (hour == undefined) {
+      var hour = Number(null);
+    }
+    else {
+      var hour = localStorage.getItem("hour");
     }
 
-    function getTime() {
-      if (second == undefined) {
-        var second = Number(null);
-      }
-      else {
-        var second = localStorage.getItem("second");
-      }
-      if (minute == undefined) {
-        var minute = Number(null);
-      }
-      else {
-        var minute = localStorage.getItem("minute");
-      }
-      if (hour == undefined) {
-        var hour = Number(null);
-      }
-      else {
-        var hour = localStorage.getItem("hour");
-      }
-    }
 
     window.setTimeout("saveTime();interval();waring()", 1000);
     function interval() {
